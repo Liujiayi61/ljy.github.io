@@ -1,0 +1,333 @@
+/* 全局布局 */
+body{
+    margin: 0;
+    font-family: "楷体";
+    font-size: medium;
+    text-align: center;
+    background-image: url(../img/10.jpg);
+}
+/* 设置凝胶布局，宽度为1000, */
+div.inner{
+    overflow: hidden;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 设置链接格式以及段落无外边距 */
+a{
+    text-decoration: none;
+    color: dimgrey;
+}
+p{
+    margin: 0;
+}
+a:hover{
+    color: rgb(65, 88, 128);
+}
+/* 页眉部分 */
+header{
+    height: 50px;
+    background-image:  url(../img/7.1.jpg);
+    color:rgb(142, 192, 175);
+}
+/* 这是设置文本左对齐并首行缩进的一个类 */
+.textleft{
+    text-indent: 25px;
+    text-align: left;
+}
+/* 导航区 */
+nav{
+    font-weight: bold;
+    font-size: large;
+    height: 40px;
+    background-color: rgb(190, 238, 241);
+}
+nav ul{
+    overflow: hidden;
+    list-style: none;
+    margin: 0 250px;
+    padding: 0;
+}
+nav ul li{
+    float: left;
+}
+nav ul li .style1{
+    padding: 0px 30px;
+    line-height: 40px;
+    display: inline-block;
+    /* 将span设为inline-block这样能设置撑开高度 */
+}
+nav ul li:hover{
+    background-image: url(../img/7.1.jpg);
+}
+
+/* 首页的第一块大内容区 */
+div#cont1{
+    padding-top: 50px;
+    height: 450px;
+    background-image: url(../img/8.jpg);
+    color: rgb(61, 41, 41);
+}
+/* 第一大内容区的cont1_1 */
+div#cont1 div#cont1_1{
+    line-height: 50px;
+    margin-top: 70px;
+    padding: 10px;
+    font-size: 180%;
+    
+}
+/* 第一个内容区的cont1_2 */
+div#cont1 div#cont1_2{
+    margin-top:240px;
+    font-size: 120%;
+}
+/* 首页的第二大内容区 */
+div#cont2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(../img/11.jpg);
+    /* overflow: hidden; */
+    border-top:  rgb(175, 202, 193) 4px solid;
+    border-bottom: rgb(141, 176, 177) 4px solid;
+    /* text-align: center; */
+    color: dimgray;
+    line-height: 30px;
+}
+div.inner .theshape{
+    padding: 10px;
+    background-image: url(../img/7.1.jpg);
+    height:350px;
+    margin-top: 30px;
+    width: 280px;
+}
+div.inner div#cont2_1{
+    float: left;
+}
+div.inner  div#cont2_2{
+    float: left;
+    margin-left: 50px;
+}
+div.inner  div#cont2_3{
+    float: right;
+}
+/* 页脚 */
+footer{
+    background-image: url(../img/7.1.jpg);
+    padding: 10px;
+    font-size: 90%  ;
+    color:rgb(142, 192, 175);
+}
+
+/* 这里是子页面side1 */
+h1{
+    font-size: 120%;
+    font-weight: bold;
+    padding: 10px 0;
+    height: 22px;
+    background-color:cadetblue;
+    margin: 0;
+}
+/* 内容区1_1右浮 */
+div#scont1 div.inner div#scont1_1{
+    width: 433px;
+    float: right;
+}
+div#scont1 div.inner div#scont1_2{
+    width: 550px;
+}
+/* 内容区scont1_1为表格 */
+div#scont1 div.inner div#scont1_1 table{
+    border-spacing: 0px 2px;
+/* 水平边框间距0，竖直边框间距2px */
+    border:  thick solid rgb(165, 187, 180);
+}
+/*标题 */
+div#scont1 div.inner div#scont1_1 caption{
+    background-color: cadetblue;
+    color: rgb(14, 15, 15);
+    font-weight: bold;
+    font-size: 120%;
+    padding: 10px;
+}
+/* 单元格内边距为5，设置表格内边框 */
+div#scont1 div.inner div#scont1_1 td,th{
+    padding: 5px;
+    border: thin solid rgb(168, 184, 178);
+}
+/* 表头字的样式 */
+div#scont1 div.inner div#scont1_1 th{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* 内容区scont1_2为表格结构布局 */
+div#scont1 div.inner div#scont1_2 div.tablerow{
+    display: table-row;
+}
+/* 第一个单元格 */
+div.tit1{
+    font-size: 120%;
+    font-weight: bold;
+    background-color:rgb(175, 197, 236);
+    border-bottom: cornsilk solid 6px;
+    vertical-align: middle;
+    /* 垂直居中放置 */
+    display: table-cell;
+    width: 100px;
+}
+/* 第二个单元格 */
+div.tit2{
+    padding: 10px;
+    vertical-align: top;
+    /* 内容顶端对齐放置 */
+    display: table-cell;
+    border-bottom: cornsilk solid 6px;
+    width: 450px;
+}
+/* 内容区scont1_3 */
+div#scont1 div.inner div#scont1_3 #scont1_2_12{
+    line-height: 30px;
+    margin: 0 auto;
+    border: rgb(180, 207, 198) solid 6px;
+}
+
+/* 这里是子页面side2 */
+/* 子内容区scont2_1是一个快捷预览区 */
+div#scont2 div#scont2-1{
+    position: fixed;
+    /* 使用固定定位 */
+    top: 90px;
+    left: 132px;
+    width: 192px;
+    border: rgb(212, 236, 236) solid 4px;
+}
+/* 子内容区scont2_2 */
+div#scont2 div#scont2-2{
+    width: 770px;
+    background-color: rgb(212, 236, 236);
+    margin-left: 210px;
+    /* 设置左外边距 不覆盖内容区1*/
+    padding: 10px;
+}
+/* 子内容区的无序列表 */
+div#scont2 div#scont2-1 ul{
+    list-style: none;
+    padding: 0;
+    font-size: 150%;
+    line-height: 50px;
+    margin:0;
+}
+/* 列表项下边框 */
+div#scont2 div#scont2-1 ul li{
+    border-bottom: rgb(100, 83, 83) solid 1px;
+}
+/* 为快捷预览区这一个列表项指定背景 */
+div#scont2 div#scont2-1 #nav1{
+    background-color: rgb(180, 202, 202);
+}
+div#scont2 div#scont2-1 ul li span{
+    display: inline-block;
+    height: 52px;
+    width: 100%;
+}
+/* 设置浮动在列表项上时的背景色 */
+div#scont2 div#scont2-1 ul li:hover{
+    background-color: rgb(180, 202, 202);
+}
+/* scont2_2 movie的背景色 */
+div#scont2 div#scont2-2 #movie{
+    padding-bottom: 5px;
+    background-color: rgb(90, 110, 146);
+}
+div#scont2 div#scont2-2 ul{
+    padding: 0;
+    margin: 5px auto;
+    width: 100px;
+}
+div#scont2 div#scont2-2 #scont2-2-12{
+    padding: 5px 20px;
+    line-height: 20px;
+}
+div#scont2 div#scont2-2 #animation{
+    background-color: rgb(109, 112, 116);
+}
+div#scont2 div#scont2-2 #music{
+    background-color: rgb(54, 82, 131);
+}
+
+/* 这里是子页面side3 */
+/* 更改h1格式 */
+div#scont3 div.inner h1{
+        height: 22px;
+        background-image: url(../img/7.1.jpg);
+        margin: 0;
+        margin-top: 10px;
+}
+/* 图片轮播区域格式设置 */
+div#scont3 div.inner div#imgBox{
+    width: 750px;
+    margin: 0 auto;
+    border-bottom: cadetblue 4px solid;
+}
+div#scont3 div.inner #imgBox img{
+    margin: 0 auto;
+    padding: 10px 0;
+}
+div#scont3 div.inner .img1{
+    display: block;
+}
+div#scont3 div.inner .img2{
+    display: none;
+}
+/* 子内容区2  home */
+div#scont3 div.inner div#home{
+    overflow: hidden;
+}
+div#scont3 div.inner div#home .theshape{
+    margin-top: 10px;
+    /* 重新调整了一下上外边距 */
+    line-height: 30px;
+}
+/* 子内容区form */
+div#scont3 div.inner div#form{
+    padding-bottom: 10px;
+    /* /* 设置一个下内边距 */
+}
+/* 对表单进行样式设计 */
+div#scont3 div.inner div#form div#form1{
+    text-align: left;
+    margin: 30px auto;
+    width: 290px;
+    padding: 10px;
+    background-color: rgb(148, 164, 235,0.5);
+}
+div#scont3 div.inner p#visit{
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+div#scont3 div.inner div#form div#form1 input{
+    border: 0px;
+    padding: 0px;
+    /* 消除input的边框以及内边距 */
+    margin-left: 6px;
+    border-radius: 5px;
+    background-color: rgb(218, 226, 226);
+    height: 20px;
+    vertical-align: middle;
+}
+div#scont3 div.inner div#form div#form1 span{
+    display: inline-block;
+    /* span为inline-block时才能定义宽度撑开 */
+    width: 72px;
+}
+div#scont3 div.inner div#form div#form1 p.content{
+    line-height: 30px;
+}
+div#scont3 div.inner div#form div#form1 #btn{
+    text-align: center;
+}
+div#scont3 div.inner div#form div#form1 #btn .bt{
+    font:medium "楷体";
+    border-radius: 5px;
+    border: 0;
+}

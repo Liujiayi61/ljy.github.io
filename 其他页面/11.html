@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>form</title>
+	<script>
+        function $(id){ return document.getElementById(id);}//封装的$(id)函数
+    
+        $("btn").onclick = function(){  //按钮点击时，执行函数（事件源 . 事件 = 事件处理程序）
+            alert($("txt").value);  //弹出输入的信息
+    
+            if($("txt").value == "小明"){  //判断输入信息
+              alert("恭喜！小明");
+            }else{
+              alert("抱歉");
+            }
+        }
+    </script>
+
+</head>
+<body>
+	<input type="text" value="请输入..." id="txt"/><button id="btn">查询</button>
+	
+ 
+</body>
+</html>

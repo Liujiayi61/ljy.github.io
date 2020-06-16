@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>其他方面</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <!-- 用于图片轮播 -->
+    <script type="text/javascript">
+        var index=0;
+        //改变图片
+        function ChangeImg() {
+            index++;
+            var a=document.getElementsByClassName("img-slide");
+            if(index>=a.length) index=0;
+            for(var i=0;i<a.length;i++){
+                a[i].style.display='none';
+            }
+            a[index].style.display='block';
+        }
+        //设置定时器，每隔两秒切换一张图片
+        setInterval(ChangeImg,1000);
+    </script>
+</head>
+<body>
+    <header class="style1">
+        <div class="inner">
+            <img src="../img/logo1.png" alt="我的logo" style="vertical-align:middle">
+            刘嘉怡的个人网站
+        </div>
+    </header>
+    <nav>
+        <div class="inner">
+            <ul>
+                <li><a href="../index.html" title="首页" target="_self"><span class="style1">首页</span></a></li>
+                <li><a href="side1.html" title="个人简介" target="_self"><span class="style1">个人简介</span></a></li>
+                <li><a href="side2.html" title="关于我的" target="_self"><span class="style1">关于我的</span></a></li>
+                <li><a href="" title="其他方面" target="_self"><span class="style1">其他方面</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="scont3">
+        <!-- scont3有三个子内容 -->
+        <div class="inner">
+            <div id="travel">
+                <h1>我的旅行</h1>
+                <div id="imgBox">
+                    <img class="img-slide img1" src="../img/旅行1.jpg" alt="1">
+                    <img class="img-slide img2" src="../img/旅行2.jpg" alt="2">
+                    <img class="img-slide img2" src="../img/旅行3.jpg" alt="3">
+                    <img class="img-slide img2" src="../img/旅行4.jpg" alt="4">
+                    <img class="img-slide img2" src="../img/旅行5.jpg" alt="5">
+                </div>
+            </div>
+            <div id="home">
+                <h1>我的宅家“创作”</h1>
+                <!-- id设为cont2_1与首页的内容区cont2中的子内容区一致，因为这里样式与其大致一致 -->
+                <div id="cont2_1" class="theshape">
+                    <strong>黑芝麻球</strong>
+                        <img src="../img/芝麻丸子.jpg" alt="芝麻丸子">
+                        这里是用蜂蜜和黑芝麻搓的黑芝麻球
+                </div>
+                <div id="cont2_2" class="theshape">
+                    <strong>手抓饼</strong>
+                        <img src="../img/手抓饼.jpg" alt="手抓饼">
+                        擀了半天的面，然后等一晚上，上午又做面饼，卷上鸡蛋肉肠生菜，加上酱汁终于是大功告成了
+                </div>
+                <div id="cont2_3" class="theshape">
+                    <strong>小麻花</strong>
+                        <img src="../img/麻花.jpg" alt="麻花">
+                        全家出动一起和面，卷麻花，然后下锅炸，不过要领没有掌握，炸出来软软的，不脆呢
+                </div>
+            </div>
+            <div id="form">
+                <h1>填个表格再走吧~</h1>
+                <div id="form1">
+                    <p id="visit">访客信息填写</p>
+                    <p class="content"><span>姓名:</span><input type="text" name="name"></p>
+                    <p class="content"><span>联系方式:</span><input type="tel" name="phone"></p>
+                    <div>
+                        <p class="content">您对我的网站还满意吗</p>
+                        <p class="content">
+                            <input style="margin-top: 0px;" type="radio" name="satisfy" value="good">满意<br>
+                            <input style="margin-top: 0px;" type="radio" name="satisfy" value="normal">一般
+                        </p>
+                    </div>
+                    <div>
+                        <p class="content">您有什么建议吗</p>
+                        <p class="content">
+                            <textarea name="comments" rows="5" cols="40"></textarea>
+                        </p>
+                    </div>
+                    <div id="btn">
+                        <button class="bt" style="background-color: rgb(147, 160, 156);">提交</button>
+                        <a href="../index.html" class="back" title="回到首页">
+                            <button class="bt" style="background-color: rgb(176, 155, 196);">首页</button></a>
+                    </div>
+                </div>
+                <p style="color:rgb(57, 74, 75);">现在暂时还提交不了，等我再厉害一点就可以了`_`</p>
+            </div>
+        </div>
+    </div>
+    <footer class="style1">
+        @刘嘉怡的个人网站
+    </footer>
+</body>
+</html>
