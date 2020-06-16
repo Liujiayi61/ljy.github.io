@@ -1,7 +1,7 @@
 /* 全局布局 */
 body{
     margin: 0;
-    font-family: "楷体";
+    font-family:"楷体","楷体_GB2312";
     font-size: medium;
     text-align: center;
     background-image: url(../img/10.jpg);
